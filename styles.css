@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: burlywood;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15vh 70vh 15vh ;
+    grid-template-columns: 80vw 20vw ;
+    grid-template-areas: 
+    "hd hd"
+    "mn sd"
+    "ft ft"
+    ;
+
+}
+
+#hd{
+    background-color: cadetblue;
+    grid-area: hd;
+    display: flex;
+}
+#mn {
+    background-color: bisque;
+    grid-area: mn;
+}
+#sd {
+    background-color: rgb(197, 202, 200);
+    grid-area: sd;
+}
+
+#ft {
+    background-color: rgb(127, 110, 127);
+    grid-area: ft;
+}
+
+/* ----------------- header---------------- */
+.hd__sect{
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#hd__sect01{
+   flex:2;
+}
+#hd__sect02{
+    flex: 6;
+}
+#hd__sect03{
+    flex: 4;
+}
+
+.dd{
+
+}
+/* -----------------------Media Queries----------------------- */
+/* -----------------------Small Screen ----------------------- */
+@media  screen and (max-width: 600px) { 
+    #container {
+    background-color: burlywood;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15vh auto 20vh 15vh ;
+    grid-template-columns: 100vw ;
+    grid-template-areas: 
+    "hd"
+    "mn"
+    "sd"
+    "ft"
+    ;
+
+}
+}
+/* -----------------------Medium Screen ----------------------- */
+@media  screen and (min-width: 601px) and (max-width:1024px){ 
+    #container {
+    background-color: burlywood;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15vh auto 20vh 15vh ;
+    grid-template-columns: 100vw ;
+    grid-template-areas: 
+    "hd"
+    "mn"
+    "sd"
+    "ft"
+    ;
+
+}
+}
+/* -----------------------Larg Screen ----------------------- */
+
